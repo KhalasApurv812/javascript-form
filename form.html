@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <form class="left-form" name="Myform" id="Myform" onsubmit="submitdata(); return false;" method="post">
+                <h1 class="title">Lets Talk About Business</h1>
+                <p class="para main">Fields marked with * are mandatory</p>
+                <div class="inner-form">
+                    <div class="label">
+                        <label id="label">First Name*</label>
+                    </div>
+                    <input type="text" class="input" id="fname" name="fname"
+                        placeholder="write your first name here eg. Apurv">
+                    <p class="para" id="no-valid-fname" style="display: none;">please write your first name here
+                    </p>
+                </div>
+                <div class="inner-form">
+                    <div class="label">
+                        <label id="label">Last Name*</label>
+                    </div>
+                    <input type="text" class="input" id="lname" name="lname"
+                        placeholder="write your Last name here eg. Khalas">
+                    <p class="para" id="no-valid-lname" style="display: none;">please write your last name here
+                    </p>
+                </div>
+                <div class="inner-form">
+                    <div class="label">
+                        <label>Email Address*</label>
+                    </div>
+                    <input type="email" class="input" name="email" id="email"
+                        placeholder="Email Address eg. apurv@dws.com">
+                    <p class="para" id="no-valid-email" style="display: none;">please write your valid email here
+                    </p>
+                </div>
+                <div class="inner-form">
+                    <div class="label">
+                        <label>Contact Number*</label>
+                    </div>
+                    <input type="number" class="input" name="num" id="num" placeholder="Contect Number eg. 7685459687">
+                    <p class="para" id="no-valid-num" style="display: none;">please write your contact number here
+                    </p>
+                </div>
+                <div class="inner-form">
+                    <div class="label">
+                        <label>Gender*</label>
+                    </div>
+                    <div class="select">
+                        <input type="radio" name="gender" id="male" value="Male">Male
+                        <input type="radio" name="gender" id="female" value="Female">Female
+                    </div>
+                    <p class="para" id="no-valid-gender" style="display: none;">please select valid genders
+                    </p>
+                </div>
+                <div class="inner-form">
+                    <div class="label">
+                        <label>Luaguages you know*</label>
+                    </div>
+                    <div class="select">
+                        <input type="checkbox" name="language" id="english">English
+                        <input type="checkbox" name="language" id="hindi">Hindi
+                        <input type="checkbox" name="language" id="gujrati">Gujrati
+                    </div>
+                    <p class="para" id="no-valid-check" style="display: none;">please select valid languages
+                    </p>
+                </div>
+                <textarea class="rbox" name="txt" id="txt" placeholder="Brief about the project"></textarea>
+                <br /><br>
+                <button type="sumbit" class="submit inner" value="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="column">
+
+            <div class="right-form" id="right-form" style="display: none;">
+                <div id="tst-right" class="tst-right-cls"></div>
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
